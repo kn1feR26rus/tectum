@@ -279,7 +279,6 @@ body {
 
 .explorer_statistic-first {
     padding-left: 0;
-
 }
 
 .explorer_statistic-first>p {
@@ -355,7 +354,6 @@ body {
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
-    display: flex;
     align-items: center;
     text-align: center;
     letter-spacing: 0.01em;
@@ -364,7 +362,6 @@ body {
 
 .radio {
     margin-left: 25px;
-
 }
 
 .radio:first-child {
@@ -406,12 +403,10 @@ body {
 
 .custom-radio>input:not(:disabled):active+span::before {
     background: linear-gradient(159.44deg, #CACEDC 9.89%, #06070A 92.84%);
-
 }
 
 .custom-radio>input:focus:not(:checked)+span::before {
     background: linear-gradient(159.44deg, #CACEDC 9.89%, #06070A 92.84%);
-
 }
 
 .custom-radio>input:checked+span::before {
@@ -427,8 +422,6 @@ body {
     text-align: left;
 }
 
-
-
 .table_title {
     font-family: 'Roboto';
     font-style: normal;
@@ -441,7 +434,6 @@ body {
     max-width: 1112px;
     width: 100%;
     position: relative;
-
 }
 
 .table_title-menu {
@@ -478,7 +470,6 @@ body {
 .table_title-menu>p:hover {
     cursor: pointer;
     background-color: #FDDA25;
-    ;
 }
 
 .table_title>span, img {
@@ -529,7 +520,6 @@ body {
     display: flex;
     flex-direction: row;
 }
-
 
 .table_body-container>div {
     height: 48px;
@@ -684,8 +674,6 @@ body {
     line-height: 32px;
 }
 
-
-
 .pages {
     width: 204px;
 }
@@ -752,7 +740,6 @@ body {
     margin: 40px auto 0;
     color: #06070A;
 }
-
 
 .registr_input {
     width: 295px;
@@ -879,7 +866,6 @@ body {
 
     .explorer_search-input {
         max-width: 690px;
-
     }
 
     .table_body-container>div:first-child {
@@ -894,7 +880,6 @@ body {
 }
 
 @media (max-width: 890px) {
-
     .header_nav {
         display: block;
         margin-left: 12px;
@@ -905,7 +890,6 @@ body {
         left: 23%;
         z-index: 22;
     }
-
 
     .header_panel {
         align-items: center;
@@ -956,13 +940,16 @@ body {
 }
 
 @media (max-width: 769px) {
-
     .table {
         overflow-x: auto;
         position: relative;
         padding-top: 93px;
         height: 680px;
         padding-bottom: 0;
+    }
+
+    .footer {
+        height: 120px;
     }
 
     .table_data {
@@ -998,5 +985,10 @@ body {
 
     .explorer_search {
         max-width: 335px;
+    }
+
+    .modal_registr {
+       max-width: 90%;
+       float: right;
     }
 }

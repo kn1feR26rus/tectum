@@ -148,8 +148,8 @@ $(document).ready(function () {
   });
 
   $(".header_registr").on("click", function () {
-    $(".background").show();
-    $(".modal_registr").show();
+    $(".background, .modal_registr").show();
+    $('.modal_enter').hide();
     $("html, body").css("overflow", "hidden");
   });
 
@@ -172,6 +172,7 @@ $(document).ready(function () {
 
   $(".header_autorization").on("click", function () {
     $(".background, .modal_enter").show();
+    $('.modal_registr').hide();
   });
 
   email.blur(function () {
