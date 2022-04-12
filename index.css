@@ -122,14 +122,12 @@ body {
 .header_panel {
     display: flex;
     flex-direction: row;
-
 }
 
 .header_switch-btn {
     margin-right: 10px;
     width: 32px;
     height: 32px;
-
 }
 
 .dark-btn {
@@ -268,7 +266,6 @@ body {
     line-height: 166%;
     display: flex;
     align-items: center;
-    text-align: right;
     letter-spacing: 0.02em;
     text-transform: uppercase;
     color: #5C6987;
