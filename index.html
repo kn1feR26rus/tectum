@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="index.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <title>Tectum</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header_logo"></div>
+      <div class="header_panel">
+        <button class="header_switch-btn dark-btn">
+          <img
+            class="header_switch-img grabbing"
+            src="/assets/header_switch-day.svg"
+            alt="day"
+          />
+        </button>
+        <button class="header_currency dark-btn grabbing">
+          RUB
+          <img src="/assets/arrow.svg" alt="arrow" />
+        </button>
+        <button class="header_language dark-btn grabbing">
+          <img src="/assets/language.svg" alt="" />
+          Русский
+          <img src="/assets/arrow.svg" alt="" />
+        </button>
+        <button class="header_autorization grabbing">Вход</button>
+        <button class="header_registr grabbing">Регистрация</button>
+        <div class="header_nav"></div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="explorer">
+        <div class="explorer_statistic">
+          <div class="explorer_statistic-first statistic-block">
+            <p>ВСЕГО КЛАСТЕРОВ <strong>28</strong></p>
+            <p>АКТИВНЫХ КЛАСТЕРОВ <strong>12</strong></p>
+          </div>
+          <div class="explorer_statistic-second statistic-block">
+            <p>ВСЕГО НОД <strong>68000</strong></p>
+            <p>АКТИВНЫХ НОД <strong>58574</strong></p>
+          </div>
+          <div class="explorer_statistic-third statistic-block">
+            <p>ВСЕГО ТОКЕНОВ</p>
+            <p><strong>38'278'154'268</strong></p>
+          </div>
+          <div class="explorer_statistic-forth statistic-block">
+            <p>КАПИТАЛИЗАЦИЯ</p>
+            <p><strong>$ 72,581,690,992</strong></p>
+          </div>
+        </div>
+        <form class="explorer_search">
+          <input
+            type="text"
+            class="explorer_search-input"
+            id="explorer_search-input"
+            placeholder=""
+          />
+          <button class="explorer_search-btn" type="submit"></button>
+        </form>
+        <div class="explorer_menu">
+          <div class="radio">
+            <label class="custom-radio">
+              <input type="radio" name="color" value="indigo" checked/>
+              <span class="grabbing">События</span>
+            </label>
+          </div>
+          <div class="radio">
+            <label class="custom-radio">
+              <input type="radio" name="color" value="indigo" />
+              <span class="grabbing">Токены</span>
+            </label>
+          </div>
+          <div class="radio">
+            <label class="custom-radio">
+              <input type="radio" name="color" value="indigo" />
+              <span class="grabbing">Хранилище</span>
+            </label>
+          </div>
+          <div class="radio">
+            <label class="custom-radio">
+              <input type="radio" name="color" value="indigo" />
+              <span class="grabbing">Файлы</span>
+            </label>
+          </div>
+          <div class="radio">
+            <label class="custom-radio">
+              <input type="radio" name="color" value="indigo" />
+              <span class="grabbing">Контакты</span>
+            </label>
+          </div>
+        </div>
+      </section>
+      <section class="table">
+        <h2 class="table_title">
+          События <span class="openDrop grabbing">Все</span>
+          <img src="/assets/arrow_black.svg" alt="arrow" class="openDrop grabbing" />
+          <div class="table_title-menu" id="table_title-menu">
+            <p class="menu-btc dropmenu" id="dropmenu">BTC</p>
+            <p class="menu-ltc dropmenu" id="dropmenu">LTC</p>
+            <p class="menu-tec dropmenu" id="dropmenu">TEC</p>
+            <p class="menu-tet dropmenu" id="dropmenu">TET</p>
+            <p class="menu-softNode dropmenu" id="dropmenu">SoftNode</p>
+          </div>
+        </h2>
+        <div class="table_data" id="table_data">
+          <div class="table_data-header">
+            <div class="table_header-item" style="width: 109px">Сеть</div>
+            <div class="table_header-item" style="width: 100px">Блок</div>
+            <div class="table_header-item" style="width: 411px">
+              Хэш событий
+            </div>
+            <div class="table_header-item" style="width: 135px">Сумма</div>
+            <div class="table_header-item" style="width: 118px">Валюта</div>
+            <div class="table_header-item" style="width: 239px">Дата/Время</div>
+          </div>
+        </div>
+        <div class="table_footer">
+          <div class="table_pagination">
+            <button class="pagination_back-db pgn-btn grabbing" disabled></button>
+            <button class="pagination_back pgn-btn grabbing" disabled></button>
+            <div class="pagination_count">1 &nbsp</div>
+            <p class="pagination_sum">из 25671</p>
+            <button class="pagination_forward pgn-btn grabbing"></button>
+            <button class="pagination_forward-db pgn-btn grabbing"></button>
+          </div>
+          <div class="table_page-count">
+            <p class="table_page-countText"></p>
+            <div class="table_pages">
+              <p class="pages">Показывать по</p>
+              <div class="pages_counts grabbing">
+                <p>10</p>
+                <img
+                  src="/assets/arrow_black.svg"
+                  alt="arrow"
+                  style="width: 10px; margin-left: 11.5px; margin-top: 5px"
+                  class="grabbing"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <img src="/assets/header_logo.svg" alt="" class="footer_logo" />
+      <div class="footer_social">
+        <a
+          href="https://www.vk.com"
+          class="social_facebook grabbing"
+          target="_blank"
+          style="background-image: url(/assets/facebook.svg)"
+        ></a>
+        <a
+          href="https://www.vk.com"
+          class="social_telegram grabbing"
+          target="_blank"
+          style="background-image: url(/assets/telegram.svg)"
+        ></a>
+        <a
+          href="https://www.vk.com"
+          class="social_linkid grabbing"
+          target="_blank"
+          style="background-image: url(/assets/linkedin.svg)"
+        ></a>
+        <a
+          href="https://www.vk.com"
+          class="social_masseger grabbing"
+          target="_blank"
+          style="background-image: url(/assets/messenger.svg)"
+        ></a>
+        <a
+          href="https://www.vk.com"
+          class="social_insta grabbing"
+          target="_blank"
+          style="background-image: url(/assets/instagram.svg)"
+        ></a>
+        <a
+          href="https://www.vk.com"
+          class="social_twitter grabbing"
+          target="_blank"
+          style="background-image: url(/assets/twitter.svg)"
+        ></a>
+      </div>
+      <div class="footer_about">
+        <p class="about-text">
+          Tectum.io ©, 2020<br />
+          Terms & Conditions – Privacy Policy<br />
+          Version 0.01
+        </p>
+      </div>
+    </footer>
+    <div class="background"></div>
+    <div class="modal_registr" id="modal_registr">
+      <button class="close_modal grabbing"></button>
+      <h3 class="registr_modal-title">Создайте Ваш аккаунт Tectum</h3>
+      <input
+        type="email"
+        class="registr_input"
+        placeholder="Введите Ваш E-mail"
+        id="email"
+      />
+      <span class="error" id="error"></span>
+      <input
+        type="submit"
+        class="regist_submit grabbing"
+        value="Зарегистрироваться"
+        id="submit"
+      />
+      <p class="registr_license">
+        Регистрируясь, вы соглашаетесь с Tectum
+        <a class="grabbing">Условиями предоставления услуг</a> и
+        <a class="grabbing">Политикой конфиденциальности</a>
+      </p>
+      <p class="registr_enter">
+        Уже есть аккаунт? <a style="color: #ffe353">Войти</a>
+      </p>
+    </div>
+    <div class="modal_enter">
+      <button class="close_modal grabbing"></button>
+      <h3 class="enter_modal-title">Вход в Ваш аккаунт Tectum</h3>
+      <input
+        type="email"
+        class="registr_input"
+        placeholder="Введите Ваш E-mail"
+        id="email_enter"
+      />
+      <span class="error" id="error_enter"></span>
+      <input
+        type="submit"
+        class="regist_submit grabbing"
+        value="Войти"
+        id="submit_enter"
+      />
+    </div>
+    <div class="burger_menu" id="burger_menu">
+      <div class="burger_header">
+        <button class="header_currency dark-btn burger_show grabbing">
+          RUB
+          <img src="/assets/arrow.svg" alt="arrow" />
+        </button>
+        <button class="header_language dark-btn burger_show grabbing">
+          <img src="/assets/language.svg" alt="" />
+          Русский
+          <img src="/assets/arrow.svg" alt="" />
+        </button>
+        <button class="close_modal burger_close grabbing"></button>
+      </div>
+      <div class="burger_userPanel">
+        <button class="header_registr burger_show grabbing">Регистрация</button>
+        <button class="header_autorization burger_show grabbing">Вход</button>
+      </div>
+      <div class="burger_nav">
+        <a class="grabbing">События</a>
+        <a class="grabbing">Токены</a>
+        <a class="grabbing">Хранилище</a>
+        <a class="grabbing">Файлы</a>
+        <a class="grabbing">Контракты</a>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
