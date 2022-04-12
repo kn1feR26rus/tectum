@@ -987,8 +987,22 @@ body {
         max-width: 335px;
     }
 
-    .modal_registr {
-       max-width: 90%;
-       float: right;
+    .modal_registr, .modal_enter {
+       width: 375px;
+       height: 100vh;
+       top: 0;
+       left: 0;
+       border: none;
+       border-radius: 0;
+       overflow: hidden;
+    }
+
+    .registr_modal-title, .enter_modal-title {
+        margin-top: 151px;
+    }
+
+    .registr_input {
+        width: 310px;
+        margin: 42px 25px 0;
     }
 }
